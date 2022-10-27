@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:wght@400;500;600;700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  background-color: whitesmoke;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Finlandica", sans-serif;
+}
+
+.container-photos {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  margin: auto;
+}
+
+.title h3 {
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.photos img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.spinner-container {
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.575);
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.spinner {
+  width: 11.2px;
+  height: 11.2px;
+  border-radius: 11.2px;
+  box-shadow: 28px 0px 0 0 rgba(0, 0, 0, 0.2),
+    22.7px 16.5px 0 0 rgba(0, 0, 0, 0.4), 8.68px 26.6px 0 0 rgba(0, 0, 0, 0.6),
+    -8.68px 26.6px 0 0 rgba(0, 0, 0, 0.8), -22.7px 16.5px 0 0 #000000;
+  animation: spinner-b87k6z 1s infinite linear;
+}
+
+@keyframes spinner-b87k6z {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container-photos {
+    width: 60%;
+  }
+  .title h3 {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container-photos {
+    width: 90%;
+  }
+  .title h3 {
+    font-size: 18px;
+  }
+}
