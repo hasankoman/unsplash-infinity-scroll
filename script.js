@@ -39,7 +39,11 @@ const displayPhotos = () => {
 
 // Ubsplash API
 const count = 10;
-const apiKey = "***KALDIRILDI***";
+// Anahtar config.js'ten gelir (gitignore'lu). Kurulum: config.example.js -> config.js
+const apiKey = window.UNSPLASH_ACCESS_KEY;
+if (!apiKey) {
+  console.error("UNSPLASH_ACCESS_KEY tanımlı değil: config.example.js dosyasını config.js olarak kopyalayıp anahtarını gir.");
+}
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 const imageLoaded = () => {
   imagesLoaded += 1;

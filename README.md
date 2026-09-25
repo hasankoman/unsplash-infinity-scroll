@@ -83,3 +83,11 @@ Specific datasets and APIs used are described within the respective module READM
 
 Testing instructions (if applicable) are provided within the individual module READMEs.
 ```
+
+## Kurulum (Unsplash API anahtarı)
+
+1. `config.example.js` dosyasını `config.js` olarak kopyala: `cp config.example.js config.js`
+2. `config.js` içinde `YOUR_UNSPLASH_ACCESS_KEY` yerine kendi Unsplash access key'ini gir ([unsplash.com/oauth/applications](https://unsplash.com/oauth/applications)).
+3. `index.html`'i tarayıcıda aç.
+
+`config.js` `.gitignore`'dadır; anahtarını commit'leme.
